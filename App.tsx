@@ -14,10 +14,6 @@ export default function App() {
       <Stack.Navigator>
         <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen name="Details" component={DetailsScreen} />
-        {/* <View style={styles.container}>
-          <Text style={styles.styledText}>Hello World 🥺!!</Text>
-          <StatusBar style="auto" />
-        </View> */}
       </Stack.Navigator>
     </NavigationContainer>
   );
