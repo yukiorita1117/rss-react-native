@@ -1,10 +1,13 @@
 import React from "react";
-import { Text, View } from "react-native";
+import WebView from "react-native-webview";
 
-export const DetailsScreen = () => {
+export const DetailsScreen = ({ route, navigation }: any) => {
+  const { item } = route.params;
+  console.log(route);
+
   return (
-    <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-      <Text>Details Screen</Text>
-    </View>
+    <>
+      <WebView source={{ uri: item.link[0] }} stye={{ marginTop: 0 }} />
+    </>
   );
 };
