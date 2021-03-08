@@ -35,6 +35,7 @@ export const HomeScreen = ({ navigation }: any) => {
         data={rssList}
         renderItem={({ item }) => (
           <ListItem>
+            {/* 押下すると半透明になるbuttonコンポーネント */}
             <TouchableOpacity
               onPress={() => {
                 navigation.navigate("Details", { item: item });
