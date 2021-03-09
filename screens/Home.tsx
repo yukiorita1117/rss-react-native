@@ -38,6 +38,7 @@ export const HomeScreen = ({ navigation }: any) => {
             {/* 押下すると半透明になるbuttonコンポーネント */}
             <TouchableOpacity
               onPress={() => {
+                // navigater いわゆるrouter
                 navigation.navigate("Details", { item: item });
               }}
             >
