@@ -30,6 +30,7 @@ export const HomeScreen = ({ navigation }: any) => {
   }, []);
   return (
     <View style={styles.container}>
+      {/* FlatListコンポーネント https://reactnative.dev/docs/flatlist*/}
       <FlatList
         ItemSeparatorComponent={() => <View style={styles.separator} />}
         data={rssList}
