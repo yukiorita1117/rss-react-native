@@ -33,6 +33,7 @@ export const HomeScreen = ({ navigation }: any) => {
       {/* FlatListコンポーネント https://reactnative.dev/docs/flatlist*/}
       <FlatList
         ItemSeparatorComponent={() => <View style={styles.separator} />}
+        // ここに renderしたい dataの Listをここに指定する。
         data={rssList}
         renderItem={({ item }) => (
           <ListItem>
